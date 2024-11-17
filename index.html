@@ -24,11 +24,17 @@
      <meta name="twitter:description" content="Descubre los intereses de Kevin Vidal y su proyecto de html"/>
      <meta name="twitter:image" content="https://th.bing.com/th/id/OIP.QsiOIMsS1Jk7Fd49q3KzyQHaEK?rs=1&pid=ImgDetMain"/>
 
+     <!-- Enlace a Material Icons. Este enlace carga la biblioteca de Material Icons desde Google Fonts,
+     permitiendo el uso de íconos con nombres específicos. -->
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <link rel="icon" href="./img/saturn_planet.ico" type="image/x-icon">
 
     <title>RoadMap Java Developer</title>
 </head>
 
-<body>
+<body style="background-color:#479ea4a3;">
 <header>
     <h1>RoadMap Java Developer - Backend Developer</h1>
     <p>En esta página me gustaría desarrollar un tema que descubrí hace poco navegando en internet. Me voy a basar principalmente en un video de un canal de Youtube <br>que me gusta mucho, ya que, contiene mucha información para los que nos queremos dedicar a un ambito de programación y de tecnología en general. <br>A continuación voy a desglosar alguna información que contiene el video (el cuál dejo al final de mi página en el apartado de referencias) más, investigación de mi <br>parte para complementar la información y tener una página muy detallada de este tema que es de mucho interés para mi.</p>
@@ -114,9 +120,72 @@
     </section>
 
     <section id="roadmap">
-        <h2>ROADMAP Completo</h2>
-        <embed src="./pdf/Roadmap-Java.pdf" type="application/pdf" width="80%" height="600px" />
+        <center>
+            <h2>ROADMAP Completo</h2>
+            <embed src="./pdf/Roadmap-Java.pdf" type="application/pdf" width="80%" height="600px" />
+        </center>
     </section>
+
+    <figure>
+        <center>
+            <img src="https://axsistec.com/wp-content/uploads/2023/08/la-diferencia-entre-el-desarrollo-de-software-31.jpg" alt="Áreas del desarrollo de software]">
+            <figcaption>Lenguajes de programación y herramientas de desarrollado</figcaption>
+        </center>
+    </figure>
+
+    <section id="contacto">
+        <h3>Formulario de contacto</h3>
+        <p>Rellena el formulario para enviarme tus comentarios o preguntas.</p>
+        <!-- Formulario de contacto -->
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" placeholder="Escribe un nombre" required />
+
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" placeholder="ejemplo@correo.com" required />
+
+          <label for="asunto">Asunto:</label>
+          <select id="asunto">
+            <option>Comentario</option>
+            <option>Consulta</option>
+            <option>Queja</option>
+            <option>Sugerencia</option>
+            <option>Otro</option>
+          </select>
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" rows="3" placeholder="Escribe un mensaje aquí..." required />
+          </textarea>
+
+          <!-- fielset: Nos sirve para agrupar elementos de un formulario relacionado.
+                     Facilita la comprensión y navegación en el formulario, especialmente para los usuarios de lectores de pantalla -->
+          <fieldset>
+            <!-- legend: Nos ayuda a proporcionar un título a mi grupo de información almacenado en el fieldset -->
+            <legend>Género</legend>
+            <!-- Cada botón de radio tiene el mismo 'name' para permitir seleccionar solo un radioboton en este grupo -->
+            <label for="genero-masculino">Masculino</label>
+            <input type="radio" name="genero" id="genero-masculino" />
+            <label for="genero-femenino">Femenino</label>
+            <input type="radio" name="genero" id="genero-femenino" />
+            <label for="genero-otro">Otro</label>
+            <input type="radio" name="genero" id="genero-otro" />
+          </fieldset>
+
+          <fieldset>
+            <legend>Intereses</legend>
+            <label for="intereses-backend">Backend</label>
+            <input type="checkbox" name="backend" id="intereses-backend" />
+
+            <label for="intereses-frontend">Frontend</label>
+            <input type="checkbox" name="frontend" id="intereses-frontend" />
+
+            <label for="intereses-full-stack">Full-Stack</label>
+            <input type="checkbox" name="full-stack" id="intereses-full-stack" />
+          </fieldset>
+
+          <button type="submit"><span class="material-icons">send</span>Enviar</button>
+        </form>
+      </section>
 
     <section>
         <h3>Referencias</h3>
@@ -125,7 +194,7 @@
 
     <!-- aside para agregar información adicional relacionada al contenido principal para dar un poco más de contexto, por ejemplo: un comentario del autor o enlaces adicionales -->
     <aside aria-labelledby="contacto-titulo">
-        <h2 id="contacto-titulo">Contacto</h2>
+        <h3 id="contacto-titulo">Contacto</h3>
         <p>Si deseas discutir de un proyecto o colaboración, contáctame a:</p>
         <address>
             <p>Email: <a href="mailto:kevinarturons@gmail.com">kevinarturons@gmail.com</a></p>
@@ -137,12 +206,13 @@
 <footer>
     <nav aria-label="Enlaces de redes sociales de Kevin Vidal">
         <ul>
-            <li><a href="#https://www.linkedin.com/in/kevinarturovp/">LinkedIn</a></li>
-            <li><a href="#">GitHub</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/kevinarturovp/" target="_blank"><span class="material-icons">favorite</span>LinkedIn</a></li>
+            <li><a href="https://github.com/KevArt96" target="_blank">GitHub</a></li>
+            <li><a href="https://x.com/kevinarturovp" target="_blank">Twitter</a></li>
+            <li><a href="https://www.instagram.com/kevinarturovp/" target="_blank">Instagram</a></li>
         </ul>
     </nav>
+    <time datetime="2024-11">Noviembre 2024</time>
     <p>&copy; 2024 Kevin Vidal. Todos los derechos reservados</p>
 </footer>
 
